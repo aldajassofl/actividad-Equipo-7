@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200&display=swap');/*font-family: 'Anuphan', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');/*font-family: 'Rubik', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap');/*font-family: 'Noto Sans', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #486f99;
+}
+
+/* INICIO contenedor superior */
+.contenedor-superior{
+    display: flex;
+    padding: 2vw;
+    justify-content: space-around;
+    margin-bottom: 4vw;   
+}
+
+.contenedor-superior h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: 'Anuphan', sans-serif;
+    font-weight: 900;
+    align-self: flex-start;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 0.3vw 0.5vw 0.4vw rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.contenedor-superior button {
+    border: none;
+    border-radius: 10vw;
+    box-shadow: 0.4vw 0.5vw 0.4vw rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    max-height: 7vw;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: box-shadow 0.5s;
+    font-weight: 800;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contenedor-superior button:hover{
+    box-shadow: 0.5vw 0.8vw 0.6vw rgba(0, 0, 0, 0.4);
+}
+/* FIN contenedor superior */
+
+/* INICIO contenedor tabla */
+.contenedor-tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-tabla th,td{
+    text-align: center;
+}
+
+.contenedor-tabla table{
+    padding: 1vw;
+    margin: 2vw;
+    font-weight: 800;
+    border-collapse: collapse;
+    border-radius: 1vw 1vw 0 0;
+    box-shadow: 0.7vw 0.6vw 0.9vw rgba(0, 0, 0, 0.3);
+}
+
+/* diseño de la encabezado */
+thead tr:first-child {
+    background: rgb(13, 13, 13);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+thead th:first-child {
+    border-radius: 1vw 0 0 0;
+}
+
+thead th:last-child {
+    border-radius: 0 1vw 0 0;
+}
+
+thead th {
+    padding: 1.3vw 3vw;
+}
+/* fin diseño de la encabezado */
+tr:nth-child(odd){
+    background-color: white;
+    cursor: pointer;
+}
+
+tr:nth-child(even){
+    background-color: #eef4ff;
+    cursor: pointer;
+}
+
+tr:hover {
+    background: #e6e6e6;
+}
+
+tr td {
+    padding: 1.3vw;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+td input {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* FIN contenedor tabla */
+
+/* INICIO contenedor formulario */
+.contenedor-formulario{
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    background: #486f99;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.formulario h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.formulario input, .formulario textarea {
+    padding: 8px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+}
+
+textarea{
+    height: 80px;
+}
+
+.formulario button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 25px;
+}
+
+.juntador1 {
+    display: flex;
+    gap: 10px;
+}
+
+.juntador1 input:first-child{
+    width: 40%;
+}
+
+.juntador1 input{
+    width: 100%;
+}
+
+.juntador2 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.juntador2 button {
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.85 rem;
+    transition: box-shadow 0.5s;
+    font-weight: 900;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.juntador2 button:hover {
+    box-shadow: 2px 3px 4px  rgba(0, 0, 0, 0.4);
+}
+
+
+/* FIN contenedor formulario */

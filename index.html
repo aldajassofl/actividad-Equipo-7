@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@200&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
+    <title>Task List</title>
+</head>
+<body>
+    <!--INICIO Formulario de agregar tarea-->
+    <div class="contenedor-formulario">
+        <div class="formulario">
+            <h1>Agregar Tarea</h1>
+            <div class="juntador1">
+                <input type="text" placeholder="Unidad" id="unidad" required>
+                <input type="text" placeholder="Nombre actividad" id="actividad" required>
+            </div>
+            <input type="text" placeholder="Modalidad" id="modalidad" required>
+            <input type="date" id="fecha">
+            <textarea placeholder="Descripción..." id="descripcion" required></textarea>
+            <div class="juntador2">
+                <button class="boton-agregar-formulario" id="insert" required>Agregar</button>
+                <button class="boton-cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <!--FIN Formulario de agregar tarea-->
+
+    <!--INICIO Contenedor superior-->
+    <div class="contenedor-superior">
+        <h1>Task-List</h1>
+        <button class="boton-agregar">Agregar tarea</button>
+    </div>
+    <!--FIN Contenedor superior-->
+
+    <!--INICIO Contenedor Tabla-->
+    <div class="contenedor-tabla">
+        <table id="tabla">
+            <thead>
+                <th>Unidad</th>
+                <th>Actividad</th>
+                <th>Modalidad</th>
+                <th>Fecha Entrega</th>
+                <th>Descripción</th>
+                <th>Estatus</th>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>Actividad 2</td>
+                <td>Subir a la plataforma</td>
+                <td>08/25/2023</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit<br> quaerat adipisci culpa non nulla ullam fugiat aperiam qui provident nihil!</td>
+                <td><input type="checkbox" name="" id=""></td>
+            </tr>
+        </table>
+    </div>
+    <!--FIN Contenedor Tabla-->
+</body>
+</html>
